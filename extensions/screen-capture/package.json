@@ -1,0 +1,14 @@
+{
+  "name": "@openclaw/screen-capture",
+  "version": "2026.1.30",
+  "description": "OpenClaw screen capture plugin - screenshots and video recording for Windows",
+  "type": "module",
+  "devDependencies": {
+    "openclaw": "workspace:*"
+  },
+  "openclaw": {
+    "extensions": [
+      "./index.ts"
+    ]
+  }
+}

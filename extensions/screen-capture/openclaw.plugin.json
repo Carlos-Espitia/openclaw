@@ -1,0 +1,28 @@
+{
+  "id": "screen-capture",
+  "name": "Screen Capture",
+  "description": "Take screenshots and record videos of your desktop screen (Windows).",
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "ffmpegPath": {
+        "type": "string",
+        "description": "Path to FFmpeg executable if not in PATH."
+      },
+      "defaultMonitor": {
+        "type": "number",
+        "description": "Default monitor index to capture (0 = primary)."
+      },
+      "screenshotFormat": {
+        "type": "string",
+        "enum": ["png", "jpeg"],
+        "description": "Image format for screenshots."
+      },
+      "maxVideoDuration": {
+        "type": "number",
+        "description": "Maximum video recording duration in seconds (max 60)."
+      }
+    }
+  }
+}
